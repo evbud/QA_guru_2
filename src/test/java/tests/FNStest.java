@@ -1,10 +1,10 @@
 package tests;
 
+import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 class FNStest {
     @Test
@@ -23,7 +23,10 @@ class FNStest {
         $(By.id("FEDERAL_SUBJECT_0")).click();
         $(By.id("P2_DOLL_2")).click();
         $(By.id("P2_VES_1")).click();
-
+        sleep(10000);
+        $(By.id("B279390790422826180")).click();
+        sleep(30000);
+        $("html").shouldHave(Condition.text("Данные отсутствуют"));
 
     }
 }
