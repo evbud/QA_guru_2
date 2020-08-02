@@ -23,9 +23,13 @@ class FNStest {
         $(By.id("FEDERAL_SUBJECT_0")).click();
         $(By.id("P2_DOLL_2")).click();
         $(By.id("P2_VES_1")).click();
+
+        //пауза для ввода капчи
         sleep(10000);
+
         $(By.id("B279390790422826180")).click();
-        sleep(30000);
+        sleep(35000);
+
         $("html").shouldHave(Condition.text("Данные отсутствуют"));
 
     }
