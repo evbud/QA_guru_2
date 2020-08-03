@@ -12,7 +12,7 @@ public class CartTest {
     @Test
 
     void cartasos () {
-        open("https://asos.com");
+        open("https://asos.com/?");
 
         $(byName("q")).setValue("Nike Classic Cortez trainers in retro leather").pressEnter();
         $(By.id("main-size-select-0")).selectOption("UK 6.5");
