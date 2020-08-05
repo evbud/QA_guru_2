@@ -15,7 +15,7 @@ public class CartTest {
         open("https://asos.com/?");
 
         $(byName("q")).setValue("Nike Classic Cortez trainers in retro leather").pressEnter();
-        $(By.id("main-size-select-0")).selectOption("UK 6.5");
+        $("#main-size-select-0").selectOption("UK 6.5");
         $(".add-button").scrollIntoView(true).click();
         $("._1M-cSy1").click();
 
