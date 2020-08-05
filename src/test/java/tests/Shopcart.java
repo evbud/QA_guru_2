@@ -18,6 +18,5 @@ class Shopcart {
         $(byPartialLinkText("Перейти в корзину")).click();
 
         $("html").shouldHave(text("Оформить заказ"));
-
     }
 }

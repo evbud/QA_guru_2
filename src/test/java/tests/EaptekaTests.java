@@ -8,9 +8,9 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class Eapteka {
+public class EaptekaTests {
     @Test
-    void EaptekaAuthTests () {
+    void loginTests () {
         open("https://eapteka.ru");
 
         $(by("data-tab-id", "auth")).click();
@@ -20,7 +20,5 @@ public class Eapteka {
         $(byText("Войти")).click();
 
         $(by("class", "htop__links right")).shouldHave(text("Выход"));
-
-
     }
 }

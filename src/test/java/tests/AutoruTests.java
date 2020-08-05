@@ -7,9 +7,9 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-class AutoruRegion {
+class AutoruTests {
     @Test
-    void regionReset() {
+    void regionTest() {
         open("https://moto.auto.ru");
 
         $(".GeoSelect").click();
@@ -17,7 +17,6 @@ class AutoruRegion {
         $(byText("Сохранить")).click();
 
         $(".GeoSelect__title").shouldHave(text("Любой регион"));
-
     }
 }
 

@@ -31,6 +31,5 @@ class FNSTests {
         sleep(35000);
 
         $("html").shouldNotHave(Condition.text("Данные отсутствуют"));
-
     }
 }

@@ -8,9 +8,9 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class CartTests {
+public class AsosTests {
     @Test
-    void cartasos () {
+    void carttest () {
         open("https://asos.com/?");
 
         $(byName("q")).setValue("Nike Classic Cortez trainers in retro leather").pressEnter();
@@ -20,6 +20,5 @@ public class CartTests {
 
         sleep(5000);
         $("html").shouldHave(text("Items are reserved for 60 minutes"));
-
     }
 }
