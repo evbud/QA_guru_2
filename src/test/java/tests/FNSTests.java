@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 class FNSTests {
     @Test
-
     void FNSgavnoTests() {
         open("http://stat.customs.ru/apex/f?p=201:2:3992905730199104::NO");
 

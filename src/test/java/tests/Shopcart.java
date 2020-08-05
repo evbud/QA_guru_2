@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 class Shopcart {
     @Test
-
     void yarkiyTests() {
         open("https://www.yarkiy.ru/");
 

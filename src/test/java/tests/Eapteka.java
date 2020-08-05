@@ -10,9 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class Eapteka {
     @Test
-
     void EaptekaAuthTests () {
-
         open("https://eapteka.ru");
 
         $(by("data-tab-id", "auth")).click();

@@ -9,9 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 class AutoruRegion {
     @Test
-
     void regionReset() {
-
         open("https://moto.auto.ru");
 
         $(".GeoSelect").click();

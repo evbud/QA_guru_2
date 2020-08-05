@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class CartTests {
     @Test
-
     void cartasos () {
         open("https://asos.com/?");
 
