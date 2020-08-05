@@ -6,9 +6,9 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-class Shopcart {
+class YarkiyTests {
     @Test
-    void yarkiyTests() {
+    void addToCartTest() {
         open("https://www.yarkiy.ru/");
 
         $(byName("q")).setValue("Leica SL2").pressEnter();

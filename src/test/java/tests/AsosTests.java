@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class AsosTests {
     @Test
-    void carttest () {
+    void cartTest () {
         open("https://asos.com/?");
 
         $(byName("q")).setValue("Nike Classic Cortez trainers in retro leather").pressEnter();
