@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class Eapteka {
     @Test
 
-    void EaptekaAuthTest () {
+    void EaptekaAuthTests () {
 
         open("https://eapteka.ru");
 

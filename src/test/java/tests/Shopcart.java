@@ -6,10 +6,10 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-class shopcart {
+class Shopcart {
     @Test
 
-    void testcart() {
+    void yarkiyTests() {
         open("https://www.yarkiy.ru/");
 
         $(byName("q")).setValue("Leica SL2").pressEnter();

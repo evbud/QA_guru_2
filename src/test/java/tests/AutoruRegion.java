@@ -7,10 +7,10 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-class AutoruRegionReset {
+class AutoruRegion {
     @Test
 
-    void RegionReset() {
+    void regionReset() {
 
         open("https://moto.auto.ru");
 
