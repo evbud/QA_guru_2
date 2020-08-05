@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.*;
 
-class FNStest {
+class FNSTests {
     @Test
 
     void FNSgavnoTests() {
