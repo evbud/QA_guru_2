@@ -1,4 +1,4 @@
-package lection3Selenide;
+package tests.lesson3;
 
 import org.junit.jupiter.api.Test;
 
