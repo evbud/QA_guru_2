@@ -9,6 +9,7 @@ import static com.codeborne.selenide.Selectors.byTitle;
 import static com.codeborne.selenide.Selenide.*;
 
 class AlfabankTests {
+
     @Test
     void archiveTest () {
         open("https://alfabank.ru/");
