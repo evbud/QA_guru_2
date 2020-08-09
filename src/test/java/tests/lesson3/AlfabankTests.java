@@ -20,7 +20,7 @@ class AlfabankTests {
         $(byText("Архивные депозиты")).click();
 
         //Необходимо убедиться, что представлено ровно три архивных депозита
-        $$(".product-cell__cell-even-delimiter").shouldHave(size(3));
+        $$(".product-cell__cell").shouldHave(size(3));
     }
 
     @Test
