@@ -6,7 +6,9 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
+
 class YarkiyTests {
+
     @Test
     void addToCartTest() {
         open("https://www.yarkiy.ru/");

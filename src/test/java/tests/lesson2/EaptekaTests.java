@@ -7,7 +7,9 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
+
 public class EaptekaTests {
+
     @Test
     void loginTests () {
         open("https://eapteka.ru");

@@ -1,14 +1,14 @@
 package tests.lesson2;
 
-import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
+
 public class AsosTests {
+
     @Test
     void cartTest () {
         open("https://asos.com/?");
