@@ -13,8 +13,8 @@ public class EaptekaTests {
         open("https://eapteka.ru");
 
         $(by("data-tab-id", "auth")).click();
-        $(byName("LOGIN")).setValue("89645077852");
-        $(byName("PASSWORD")).setValue("674625");
+        $(byName("LOGIN")).setValue("");
+        $(byName("PASSWORD")).setValue("");
         $(byText("Запомнить")).click();
         $(byText("Войти")).click();
 
