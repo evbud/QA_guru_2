@@ -16,7 +16,7 @@ class GoogleTests {
 
     @Tag("for_jenkins")
     @Test
-    void selenideSearchTests() {
+    void selenideSearchTest() {
         addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
         Configuration.headless = true;
 
