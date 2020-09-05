@@ -17,8 +17,8 @@ class GoogleTests {
     @Tag("for_jenkins")
     @Test
     void selenideSearchTest() {
-        addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
-        Configuration.headless = true;
+        //addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+        //Configuration.headless = true;
 
         // Открыть google
         open("https://google.com");
@@ -28,17 +28,5 @@ class GoogleTests {
 
         // Проверить, что Selenide появился в результатах поиска
         $("html").shouldHave(text("selenide.org"));
-    }
-
-    @Tag("for_jenkins")
-    @Test
-    void lepraSearchTest() {
-        addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
-        Configuration.headless = true;
-        open("https://ya.ru");
-
-        $("#text").setValue("лепра").pressEnter();
-
-        $("html").shouldHave(text("суверенный лепрозорий"));
     }
 }

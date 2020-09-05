@@ -12,11 +12,11 @@ import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 
 class YandexTests {
 
-    //@Tag("for_jenkins")
+    @Tag("for_jenkins")
     @Test
     void lepraSearchTest() {
-        addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
-        Configuration.headless = true;
+        //addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+        //Configuration.headless = true;
         open("https://ya.ru");
 
         $("#text").setValue("лепра").pressEnter();
