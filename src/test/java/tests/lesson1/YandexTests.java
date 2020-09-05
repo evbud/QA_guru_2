@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 class YandexTests extends TestBase {
 
-    //@Tag("for_jenkins")
+    @Tag("for_jenkins")
     @Test
     void lepraSearchTest() {
         open("https://ya.ru");
